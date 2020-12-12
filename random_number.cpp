@@ -6,8 +6,7 @@
 
 void sleepcp(int milliseconds);
 
-void sleepcp(int milliseconds) // Cross-platform sleep function
-{
+void sleepcp(int milliseconds){
     clock_t time_end;
     time_end = clock() + milliseconds * CLOCKS_PER_SEC/1000;
     while (clock() < time_end){}
@@ -18,8 +17,7 @@ int main(){
 	
 	//GERA NUMEROS
 	int qtdApostas, qtdNumeros, menorNum, maiorNum;
-	printf("**GERADOR DE NÚMEROS QUE COM CERTEZA SERÃO SORTEADOS NA MEGA DA VIRADA**\r\n");
-	
+	printf("**GERADOR DE NÚMEROS QUE COM CERTEZA SERÃO SORTEADOS NA MEGA DA VIRADA**\n");
 	printf("Qual será a quantidade de apostas que serão feitas? ");
 	scanf("%d", &qtdApostas);
 	
@@ -44,7 +42,7 @@ int main(){
 	
 	for(i = 0; i < qtdApostas; i++){
 		printf("\n%d°\t", i+1);
-		sleepcp(100);
+		sleepcp(50);
 		for(j = 0; j < qtdNumeros; j++){
 			sleepcp(100);
 			rNum = rand() % maiorNum + menorNum;
@@ -99,7 +97,7 @@ int main(){
 	printf("\n**RESULTADO**");
 	for(i = 0; i < qtdApostas; i++){
 		printf("\n%d°\t", i+1);
-		sleepcp(100);
+		sleepcp(50);
 		for(j = 0; j < qtdNumeros; j++){
 			sleepcp(100);
 			printf("%d	",apostas[i][j]);
