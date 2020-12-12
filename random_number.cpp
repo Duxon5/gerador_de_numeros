@@ -1,39 +1,55 @@
 #include <stdlib.h>
 #include <ctime>
 #include <locale.h>
+#include <iostream>
+#include <time.h>
+
+void sleepcp(int milliseconds);
+
+void sleepcp(int milliseconds) // Cross-platform sleep function
+{
+    clock_t time_end;
+    time_end = clock() + milliseconds * CLOCKS_PER_SEC/1000;
+    while (clock() < time_end){}
+}
 
 int main(){
 	setlocale (LC_ALL,"");
 	
 	//GERA NUMEROS
-	int rNum, qtdApostas, qtdNumeros, aux, i, j, k, l, cont, diferente = 1;
-	int menorNum, maiorNum;
-	
-	srand (time(NULL));
-	
+	int qtdApostas, qtdNumeros, menorNum, maiorNum;
 	printf("**GERADOR DE NÚMEROS QUE COM CERTEZA SERÃO SORTEADOS NA MEGA DA VIRADA**\r\n");
 	
-	printf("Digite a quantidade de apostas que serão feitas: ");
+	printf("Qual será a quantidade de apostas que serão feitas? ");
 	scanf("%d", &qtdApostas);
 	
-	printf("Digite a quantidade de números que serão apostados: ");
+	printf("Qual será a quantidade de números que serão apostados: ");
 	scanf("%d", &qtdNumeros);
 	
-	printf("\nDigite o menor número do sorteio: ");
+	printf("\nQual o menor número possível? ");
 	scanf("%d", &menorNum);
 	
-	printf("Digite o maior número do sorteio: ");
+	printf("Qual o maior número do sorteio? ");
 	scanf("%d", &maiorNum);
-		
-	int apostas[qtdApostas][qtdNumeros];
 	
-	//printf("\n\n**NUMEROS SORTEADOS**");
+	sleepcp(2000);	
+	
+	printf("\nSORTEANDO NÚMEROS...");
+	sleepcp(3000);
+	system("cls");
+	
+	srand (time(NULL));
+	printf("\n\n**NUMEROS SORTEADOS**");
+	int apostas[qtdApostas][qtdNumeros], rNum, aux, i, j, k, diferente = 1;
+	
 	for(i = 0; i < qtdApostas; i++){
-		//printf("\n%d°\t", i+1);
+		printf("\n%d°\t", i+1);
+		sleepcp(100);
 		for(j = 0; j < qtdNumeros; j++){
+			sleepcp(100);
 			rNum = rand() % maiorNum + menorNum;
 			
-			//printf("%d	", rNum);
+			printf("%d	", rNum);
 				
 			apostas[i][j] = rNum;
 						
@@ -61,7 +77,13 @@ int main(){
 	}*/	
 	
 	//ORGANIZA NUMEROS
-	//printf("\n**APLICANDO ASCENDENTE NOS NÚMEROS...**\n");
+
+	sleepcp(2000);
+	system("cls");	
+	printf("\n**APLICANDO ASCENDENTE NOS NÚMEROS...**\n");
+	sleepcp(3000);
+	int cont;
+	
 	for(i = 0; i < qtdApostas; i++){
 		for(cont = 0; cont < qtdNumeros; cont++){
 			for(j = cont; j < qtdNumeros; j++){
@@ -77,7 +99,9 @@ int main(){
 	printf("\n**RESULTADO**");
 	for(i = 0; i < qtdApostas; i++){
 		printf("\n%d°\t", i+1);
+		sleepcp(100);
 		for(j = 0; j < qtdNumeros; j++){
+			sleepcp(100);
 			printf("%d	",apostas[i][j]);
 		}
 	}
