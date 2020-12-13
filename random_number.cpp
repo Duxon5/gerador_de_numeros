@@ -37,14 +37,14 @@ int main(){
 	system("cls");
 	
 	srand (time(NULL));
-	printf("\n\n**NUMEROS SORTEADOS**");
+	printf("\n**NUMEROS SORTEADOS**");
 	int apostas[qtdApostas][qtdNumeros], rNum, aux, i, j, k, diferente = 1;
 	
 	for(i = 0; i < qtdApostas; i++){
 		printf("\n%d°\t", i+1);
-		sleepcp(50);
+		sleepcp(25);
 		for(j = 0; j < qtdNumeros; j++){
-			sleepcp(100);
+			sleepcp(50);
 			rNum = rand() % maiorNum + menorNum;
 			
 			printf("%d	", rNum);
@@ -64,22 +64,27 @@ int main(){
 			}
 		}
 	}
-	
-	/*//GUARDANDO OS NÚMEROS EM OUTRA VARIÁVEL, CASO NECESSÁRIO (BACKUP)
-	int apostas_bkp[i][j];
-	printf("\n\n**REALIZANDO BACKUP...**\n");
+
 	for(i = 0; i < qtdApostas; i++){
 		for(j = 0; j < qtdNumeros; j++){
 			apostas_bkp[i][j] = apostas[i][j];
 		}
-	}*/	
+	}
+		
+	//GUARDANDO OS NÚMEROS EM OUTRA VARIÁVEL, CASO NECESSÁRIO (BACKUP)
+	int apostas_bkp[i][j];
+	//printf("\n\n**REALIZANDO BACKUP...**\n");
+	for(i = 0; i < qtdApostas; i++){
+		for(j = 0; j < qtdNumeros; j++){
+			apostas_bkp[i][j] = apostas[i][j];
+		}
+	}
 	
 	//ORGANIZA NUMEROS
-
-	sleepcp(2000);
-	system("cls");	
-	printf("\n**APLICANDO ASCENDENTE NOS NÚMEROS...**\n");
+	sleepcp(2000);	
+	printf("\n\n**APLICANDO ORDEM CRESCENTE NOS NÚMEROS SORTEADOS...**\n");
 	sleepcp(3000);
+	system("cls");
 	int cont;
 	
 	for(i = 0; i < qtdApostas; i++){
@@ -94,13 +99,47 @@ int main(){
 		}
 	}
 	
-	printf("\n**RESULTADO**");
+	printf("\n**RESULTADO**\n");
+	sleepcp(25);
+	printf("%d apostas | %d números por aposta\n",qtdApostas, qtdNumeros);
+	sleepcp(25);
+	printf("números entre %d e %d\n", menorNum, maiorNum);
 	for(i = 0; i < qtdApostas; i++){
 		printf("\n%d°\t", i+1);
-		sleepcp(50);
+		sleepcp(25);
 		for(j = 0; j < qtdNumeros; j++){
-			sleepcp(100);
+			sleepcp(50);
 			printf("%d	",apostas[i][j]);
 		}
 	}
+	
+	int opcao;
+	printf("\n\n------------------------------------\n");
+	printf("\nO que você deseja fazer com as apostas?");
+	printf("\n1 - Sortear novamente.");
+	printf("\n2 - Gravar o resultado em um arquivo de texto já existente.");
+	printf("\n3 - Gravar o resultado em um novo arquivo de texto.");
+	printf("\n4 - Sair\nEscolha a opção desejada:");
+	scanf("%d", &opcao);
+	
+	switch(opcao){
+		case 1:
+			sleepcp(1000);
+			printf("\nO PROGRAMA SERÁ INICIADO NOVAMENTE.");
+			sleepcp(2000);
+			system("cls");
+			return main();
+		case 2:
+			break;
+		case 3:
+			break;
+		case 4:
+			system("cls");
+			sleepcp(2000);
+			printf("O PROGRAMA SERÁ FINALIZADO.");
+			sleepcp(3000);
+			return 0;
+	}
+	
+	return 0;
 }
