@@ -51,6 +51,7 @@ int main(){
 				
 			apostas[i][j] = rNum;
 						
+			//VALIDA SE O NÚMERO É REPETIDO. CASO FOR, SORTEIA UM NOVO.			
 			for(k = 0; k < j; k++){
 				do{
 					if(rNum == apostas[i][k]){
@@ -64,13 +65,7 @@ int main(){
 			}
 		}
 	}
-
-	for(i = 0; i < qtdApostas; i++){
-		for(j = 0; j < qtdNumeros; j++){
-			apostas_bkp[i][j] = apostas[i][j];
-		}
-	}
-		
+			
 	//GUARDANDO OS NÚMEROS EM OUTRA VARIÁVEL, CASO NECESSÁRIO (BACKUP)
 	int apostas_bkp[i][j];
 	//printf("\n\n**REALIZANDO BACKUP...**\n");
