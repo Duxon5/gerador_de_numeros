@@ -33,7 +33,7 @@ void list_dir(const char *path) {
 		string extensao = tipo.substr(procura + 1);
 		//cout << extensao << endl;
 		if(extensao == "txt"){
-			sleepcp(250);
+			//sleepcp(250);
 			cout << arq_escolha << " - ";
 			arq_escolha += 1;
 			cout << entry->d_name << endl;
@@ -45,8 +45,8 @@ void list_dir(const char *path) {
 char list_file_content(){
 	char filename[50];
 	ifstream file;
-	
-	sleepcp(1500);
+	string line;
+	//sleepcp(1500);
 	cout << "\nQual arquivo será aberto?" << endl;
 	cin.getline(filename, 50);
 	file.open(filename);
@@ -54,11 +54,13 @@ char list_file_content(){
 	if(!file.is_open()){
 		exit(EXIT_FAILURE);
 	}
-	char word[50];
 	
+	char word[50];
+		
 	file >> word;
 	while(file.good()){
-		cout << word << " ";
+		cout << word;
+		//cout << break_line << "\n";
 		file >> word;
 	}
 }
