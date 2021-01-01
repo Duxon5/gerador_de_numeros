@@ -1,0 +1,2104 @@
+!SESSION 2020-12-25 11:39:32.045 -----------------------------------------------
+eclipse.buildId=4.11.0.I20190307-0500
+java.version=1.8.0_211
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data C:\Users\sigaj\OneDrive\Documentos\GitHub\gerador_de_numeros -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.tm.terminal.connector.local 4 0 2020-12-25 11:39:32.971
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.local [738]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [1056]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.100.201901312304"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [744]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.connector.process; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.connector.process; bundle-version="4.5.100.201901312304"; singleton:="true"
+       org.eclipse.tm.terminal.connector.process [739]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.100.201901312304"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.tm.terminal.connector.process 4 0 2020-12-25 11:39:32.979
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.process [739]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [1056]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.100.201901312304"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [744]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.tm.terminal.connector.ssh 4 0 2020-12-25 11:39:32.992
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.ssh [740]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.100.201901312304"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [744]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+              org.eclipse.tm.terminal.control [1056]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.tm.terminal.connector.telnet 4 0 2020-12-25 11:39:33.000
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.connector.telnet [741]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.0"; resolution:="optional"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.view.ui; bundle-version="4.5.100.201901312304"; singleton:="true"
+       org.eclipse.tm.terminal.view.ui [744]
+         Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+           -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+              org.eclipse.tm.terminal.control [1056]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.tm.terminal.view.ui 4 0 2020-12-25 11:39:33.006
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.view.ui [744]
+  Unresolved requirement: Require-Bundle: org.eclipse.tm.terminal.control; bundle-version="4.5.0"
+    -> Bundle-SymbolicName: org.eclipse.tm.terminal.control; bundle-version="5.0.0.202009071350"; singleton:="true"
+       org.eclipse.tm.terminal.control [1056]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.codered 4 0 2020-12-25 11:39:33.192
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.codered [990]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.core 4 0 2020-12-25 11:39:33.202
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.core [991]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+       org.eclipse.cdt.debug.core [1017]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.core 4 0 2020-12-25 11:39:33.209
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.core [992]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag 4 0 2020-12-25 11:39:33.218
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.gdbjtag [993]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+       org.eclipse.cdt.debug.core [1017]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.core [1005]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.dsf [1021]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.core [1018]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+              org.eclipse.cdt.dsf.gdb [1022]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Import-Package: ilg.gnumcueclipse.packs.xcdl
+    -> Export-Package: ilg.gnumcueclipse.packs.xcdl; bundle-symbolic-name="ilg.gnumcueclipse.packs.data"; bundle-version="2.4.2.202010292017"; version="0.0.0"
+       ilg.gnumcueclipse.packs.data [1006]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.core [992]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.jlink 4 0 2020-12-25 11:39:33.235
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.gdbjtag.jlink [994]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+       org.eclipse.cdt.debug.core [1017]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.gdbjtag
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.gdbjtag; bundle-version="4.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.gdbjtag [993]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.core [1005]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf [1021]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+              org.eclipse.cdt.debug.gdbjtag.core [1018]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+                     org.eclipse.cdt.dsf.gdb [1022]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                            org.eclipse.cdt.launch [1026]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                                   org.eclipse.cdt.debug.ui [1020]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                                   org.eclipse.launchbar.ui [1055]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+                         -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+         Unresolved requirement: Import-Package: ilg.gnumcueclipse.packs.xcdl
+           -> Export-Package: ilg.gnumcueclipse.packs.xcdl; bundle-symbolic-name="ilg.gnumcueclipse.packs.data"; bundle-version="2.4.2.202010292017"; version="0.0.0"
+              ilg.gnumcueclipse.packs.data [1006]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.debug.core [992]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.managedbuild.cross
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.managedbuild.cross; bundle-version="1.3.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.managedbuild.cross [1000]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+              org.eclipse.cdt.managedbuilder.ui [1031]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+                  -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.make.ui [1028]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.1.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.ui [1019]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.openocd 4 0 2020-12-25 11:39:33.241
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.gdbjtag.openocd [995]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.core [992]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.core [1018]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf [1021]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+              org.eclipse.cdt.dsf.gdb [1022]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.managedbuild.cross
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.managedbuild.cross; bundle-version="1.3.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.managedbuild.cross [1000]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.core [1005]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+              org.eclipse.cdt.managedbuilder.ui [1031]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+                  -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.make.ui [1028]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.gdbjtag
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.gdbjtag; bundle-version="4.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.gdbjtag [993]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+         Unresolved requirement: Import-Package: ilg.gnumcueclipse.packs.xcdl
+           -> Export-Package: ilg.gnumcueclipse.packs.xcdl; bundle-symbolic-name="ilg.gnumcueclipse.packs.data"; bundle-version="2.4.2.202010292017"; version="0.0.0"
+              ilg.gnumcueclipse.packs.data [1006]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.1.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.ui [1019]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.pyocd 4 0 2020-12-25 11:39:33.248
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.gdbjtag.pyocd [996]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.core [1018]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf [1021]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+              org.eclipse.cdt.dsf.gdb [1022]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.core [992]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.gdbjtag
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.gdbjtag; bundle-version="4.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.gdbjtag [993]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.core [1005]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+         Unresolved requirement: Import-Package: ilg.gnumcueclipse.packs.xcdl
+           -> Export-Package: ilg.gnumcueclipse.packs.xcdl; bundle-symbolic-name="ilg.gnumcueclipse.packs.data"; bundle-version="2.4.2.202010292017"; version="0.0.0"
+              ilg.gnumcueclipse.packs.data [1006]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.1.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.ui [1019]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.managedbuild.cross
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.managedbuild.cross; bundle-version="1.3.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.managedbuild.cross [1000]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+              org.eclipse.cdt.managedbuilder.ui [1031]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+                  -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.make.ui [1028]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.qemu 4 0 2020-12-25 11:39:33.259
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.gdbjtag.qemu [997]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.core [1018]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf [1021]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+              org.eclipse.cdt.dsf.gdb [1022]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.core [992]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.gdbjtag
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.gdbjtag; bundle-version="4.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.gdbjtag [993]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.core [1005]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+         Unresolved requirement: Import-Package: ilg.gnumcueclipse.packs.xcdl
+           -> Export-Package: ilg.gnumcueclipse.packs.xcdl; bundle-symbolic-name="ilg.gnumcueclipse.packs.data"; bundle-version="2.4.2.202010292017"; version="0.0.0"
+              ilg.gnumcueclipse.packs.data [1006]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.ui; bundle-version="8.1.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.ui [1019]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.managedbuild.cross
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.managedbuild.cross; bundle-version="1.3.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.managedbuild.cross [1000]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+              org.eclipse.cdt.managedbuilder.ui [1031]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+                  -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.make.ui [1028]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.gdbjtag.restart 4 0 2020-12-25 11:39:33.267
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.gdbjtag.restart [998]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.debug.packs 4 0 2020-12-25 11:39:33.275
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.debug.packs [999]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.8.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.dsf [1021]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb.ui; bundle-version="2.6.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb.ui; bundle-version="2.6.100.201902141512"; singleton:="true"
+       org.eclipse.cdt.dsf.gdb.ui [1023]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.ui; bundle-version="2.5.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf.ui [1024]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="6.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="6.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                     org.eclipse.cdt.debug.ui [1020]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="[5.5.0,6.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+              org.eclipse.cdt.dsf.gdb [1022]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"; visibility:="reexport"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.core [1005]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="5.2.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.ui; bundle-version="2.5.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.ui; bundle-version="2.5.1.201811241055"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.data
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.data; bundle-version="2.4.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.data [1006]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.managedbuild.cross 4 0 2020-12-25 11:39:33.282
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.managedbuild.cross [1000]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.core [1005]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.debug.core [992]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+       org.eclipse.cdt.managedbuilder.ui [1031]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.make.ui [1028]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.managedbuild.cross.arm 4 0 2020-12-25 11:39:33.289
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.managedbuild.cross.arm [1001]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.managedbuild.cross
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.managedbuild.cross; bundle-version="1.3.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.managedbuild.cross [1000]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.core [1005]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+                     ilg.gnumcueclipse.core [991]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                            org.eclipse.cdt.debug.core [1017]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                                   org.eclipse.launchbar.core [1054]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.debug.core [992]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+              org.eclipse.cdt.managedbuilder.ui [1031]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+                  -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.make.ui [1028]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                            org.eclipse.cdt.launch [1026]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                                   org.eclipse.cdt.debug.ui [1020]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                                   org.eclipse.launchbar.ui [1055]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.managedbuild.cross.riscv 4 0 2020-12-25 11:39:33.296
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.managedbuild.cross.riscv [1002]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.managedbuild.cross
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.managedbuild.cross; bundle-version="1.3.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.managedbuild.cross [1000]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.core [1005]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+                     ilg.gnumcueclipse.core [991]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                            org.eclipse.cdt.debug.core [1017]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                                   org.eclipse.launchbar.core [1054]
+                                     Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.debug.core [992]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+              org.eclipse.cdt.managedbuilder.ui [1031]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+                  -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.make.ui [1028]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                            org.eclipse.cdt.launch [1026]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                                   org.eclipse.cdt.debug.ui [1020]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                       -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                                   org.eclipse.launchbar.ui [1055]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.debug.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.debug.core; bundle-version="1.2.2.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.managedbuild.packs 4 0 2020-12-25 11:39:33.302
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.managedbuild.packs [1003]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.core [1005]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.data
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.data; bundle-version="2.4.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.data [1006]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+       org.eclipse.cdt.managedbuilder.ui [1031]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.make.ui [1028]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.packs 4 0 2020-12-25 11:39:33.309
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.packs [1004]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.core [1005]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.data
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.data; bundle-version="2.4.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.data [1006]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.packs.core 4 0 2020-12-25 11:39:33.316
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.packs.core [1005]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.packs.data 4 0 2020-12-25 11:39:33.322
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.packs.data [1006]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs.core [1005]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.packs.ui 4 0 2020-12-25 11:39:33.331
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.packs.ui [1007]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs; bundle-version="1.4.2.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.packs [1004]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.core [1005]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.data
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.data; bundle-version="2.4.2.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.packs.data [1006]
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+                Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+                  -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.core; bundle-version="2.4.3.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.packs.data
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.packs.data; bundle-version="2.4.2.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.templates.ad 4 0 2020-12-25 11:39:33.337
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.templates.ad [1008]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+       org.eclipse.cdt.managedbuilder.ui [1031]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.make.ui [1028]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                                   org.eclipse.cdt.debug.core [1017]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.templates.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.templates.core; bundle-version="2.6.4.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.templates.core [1009]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.templates.core 4 0 2020-12-25 11:39:33.346
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.templates.core [1009]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.templates.cortexm 4 0 2020-12-25 11:39:33.352
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.templates.cortexm [1010]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.templates.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.templates.core; bundle-version="2.6.4.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.templates.core [1009]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+       org.eclipse.cdt.managedbuilder.ui [1031]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.make.ui [1028]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.templates.freescale 4 0 2020-12-25 11:39:33.359
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.templates.freescale [1011]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.templates.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.templates.core; bundle-version="2.6.4.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.templates.core [1009]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+       org.eclipse.cdt.managedbuilder.ui [1031]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.make.ui [1028]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.templates.freescale.pe 4 0 2020-12-25 11:39:33.368
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.templates.freescale.pe [1012]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.templates.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.templates.core; bundle-version="2.6.4.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.templates.core [1009]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+       org.eclipse.cdt.managedbuilder.ui [1031]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.make.ui [1028]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.templates.sifive 4 0 2020-12-25 11:39:33.375
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.templates.sifive [1013]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.managedbuilder.ui; bundle-version="9.1.100.201903011129"; singleton:="true"
+       org.eclipse.cdt.managedbuilder.ui [1031]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.make.ui [1028]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+                     org.eclipse.cdt.launch [1026]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                            org.eclipse.cdt.debug.ui [1020]
+                              Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                                -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                                   org.eclipse.cdt.debug.core [1017]
+                                     Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                       -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.ui [1055]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.core [991]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.templates.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.templates.core; bundle-version="2.6.4.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.templates.core [1009]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY ilg.gnumcueclipse.templates.stm 4 0 2020-12-25 11:39:33.384
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: ilg.gnumcueclipse.templates.stm [1014]
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.templates.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.templates.core; bundle-version="2.6.4.202010292017"; singleton:="true"
+       ilg.gnumcueclipse.templates.core [1009]
+         Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+           -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+              ilg.gnumcueclipse.core [991]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="8.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                            org.eclipse.launchbar.core [1054]
+                              Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: ilg.gnumcueclipse.core
+    -> Bundle-SymbolicName: ilg.gnumcueclipse.core; bundle-version="5.2.1.202010292017"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.debug.core 4 0 2020-12-25 11:39:33.391
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.debug.core [1017]
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+    -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+       org.eclipse.launchbar.core [1054]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.debug.gdbjtag.core 4 0 2020-12-25 11:39:33.398
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.debug.gdbjtag.core [1018]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+       org.eclipse.cdt.debug.core [1017]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.dsf [1021]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+       org.eclipse.cdt.dsf.gdb [1022]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.launch [1026]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                     org.eclipse.cdt.debug.ui [1020]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.ui [1055]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+    -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.debug.gdbjtag.ui 4 0 2020-12-25 11:39:33.404
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.debug.gdbjtag.ui [1019]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.1"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.gdbjtag.core; bundle-version="9.2.100.201901040958"; singleton:="true"
+       org.eclipse.cdt.debug.gdbjtag.core [1018]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.launch [1026]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                     org.eclipse.cdt.debug.ui [1020]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                            org.eclipse.cdt.debug.core [1017]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.ui [1055]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="[5.5.0,6.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+       org.eclipse.cdt.dsf.gdb [1022]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf [1021]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb.ui; bundle-version="2.6.100.201902141512"; singleton:="true"
+       org.eclipse.cdt.dsf.gdb.ui [1023]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.ui
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.ui; bundle-version="2.5.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf.ui [1024]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="6.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="6.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="[5.5.0,6.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch
+    -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.debug.ui 4 0 2020-12-25 11:39:33.411
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.debug.ui [1020]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+       org.eclipse.cdt.debug.core [1017]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+    -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.dsf 4 0 2020-12-25 11:39:33.418
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf [1021]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+       org.eclipse.cdt.debug.core [1017]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 0 2020-12-25 11:39:33.424
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf.gdb [1022]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+       org.eclipse.cdt.launch [1026]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.debug.ui [1020]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.ui [1055]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.dsf [1021]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"; visibility:="reexport"
+    -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.dsf.gdb.ui 4 0 2020-12-25 11:39:33.431
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf.gdb.ui [1023]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.ui; bundle-version="2.5.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.dsf.ui [1024]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="6.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.dsf [1021]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="6.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.debug.ui [1020]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf.gdb; bundle-version="[5.5.0,6.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf.gdb; bundle-version="5.6.100.201812200837"; singleton:="true"
+       org.eclipse.cdt.dsf.gdb [1022]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="6.1.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.launch [1026]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf
+           -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"; visibility:="reexport"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.dsf.ui 4 0 2020-12-25 11:39:33.437
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.dsf.ui [1024]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="6.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+       org.eclipse.cdt.debug.core [1017]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.dsf; bundle-version="2.0.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.dsf; bundle-version="2.8.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.dsf [1021]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="6.1.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.debug.ui [1020]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.launch 4 0 2020-12-25 11:39:33.443
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.launch [1026]
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+    -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+       org.eclipse.launchbar.core [1054]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+       org.eclipse.cdt.debug.ui [1020]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+              org.eclipse.cdt.debug.core [1017]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+    -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+       org.eclipse.launchbar.ui [1055]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.make.ui 4 0 2020-12-25 11:39:33.450
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.make.ui [1028]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+    -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+       org.eclipse.cdt.launch [1026]
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.core [1054]
+                Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+              org.eclipse.cdt.debug.ui [1020]
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                     org.eclipse.cdt.debug.core [1017]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+           -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+         Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+           -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+              org.eclipse.launchbar.ui [1055]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.cdt.managedbuilder.ui 4 0 2020-12-25 11:39:33.457
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.cdt.managedbuilder.ui [1031]
+  Unresolved requirement: Require-Bundle: org.eclipse.cdt.make.ui
+    -> Bundle-SymbolicName: org.eclipse.cdt.make.ui; bundle-version="7.3.1.201811291831"; singleton:="true"
+       org.eclipse.cdt.make.ui [1028]
+         Unresolved requirement: Require-Bundle: org.eclipse.cdt.launch; bundle-version="9.2.0"
+           -> Bundle-SymbolicName: org.eclipse.cdt.launch; bundle-version="9.2.1.201811291831"; singleton:="true"
+              org.eclipse.cdt.launch [1026]
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.core [1054]
+                       Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.ui; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.ui; bundle-version="8.3.1.201811241055"; singleton:="true"
+                     org.eclipse.cdt.debug.ui [1020]
+                       Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                         -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                            org.eclipse.cdt.debug.core [1017]
+                              Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                                -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core; bundle-version="2.0.0"
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.cdt.debug.core; bundle-version="[7.0.0,9.0.0)"
+                  -> Bundle-SymbolicName: org.eclipse.cdt.debug.core; bundle-version="8.3.100.201812222020"; singleton:="true"
+                Unresolved requirement: Require-Bundle: org.eclipse.launchbar.ui; bundle-version="2.1.0"
+                  -> Bundle-SymbolicName: org.eclipse.launchbar.ui; bundle-version="2.4.0.202008310315"; singleton:="true"
+                     org.eclipse.launchbar.ui [1055]
+                       Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+                         -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.launchbar.core 4 0 2020-12-25 11:39:33.465
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.launchbar.core [1054]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.launchbar.ui 4 0 2020-12-25 11:39:33.471
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.launchbar.ui [1055]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+  Unresolved requirement: Require-Bundle: org.eclipse.launchbar.core
+    -> Bundle-SymbolicName: org.eclipse.launchbar.core; bundle-version="2.4.0.202008310315"; singleton:="true"
+       org.eclipse.launchbar.core [1054]
+         Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.tm.terminal.control 4 0 2020-12-25 11:39:33.478
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.tm.terminal.control [1056]
+  Unresolved requirement: Require-Capability: osgi.ee; filter:="(&(osgi.ee=JavaSE)(version=11))"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:452)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1784)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1763)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1726)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1657)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:233)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:343)
+
+!ENTRY org.eclipse.egit.core 1 0 2020-12-25 11:39:34.713
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.eclipse.jface.text 2 0 2020-12-25 11:39:37.228
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-12-25 11:39:41.165
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sigaj'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 2 2 2020-12-25 11:40:39.084
+!MESSAGE Invalid property category path: org.eclipse.cdt.managedbuilder.ui.properties.Page_head_build (bundle: org.eclipse.cdt.ui, propertyPage: org.eclipse.cdt.managedbuilder.ui.properties.BuildLogPreferencePage)

@@ -14,50 +14,50 @@ void sleepcp(int milliseconds){
 
 int main(){
 	setlocale (LC_ALL,"");
-	
+
 	//GERA NUMEROS
 	int qtdApostas, qtdNumeros, menorNum, maiorNum;
-	printf("**GERADOR DE NÚMEROS QUE COM CERTEZA SERÃO SORTEADOS NA MEGA DA VIRADA**\n");
-	printf("Qual será a quantidade de apostas que serão feitas? ");
+	printf("**GERADOR DE NÃšMEROS QUE COM CERTEZA SERÃƒO SORTEADOS NA MEGA DA VIRADA**\n");
+	printf("Qual serÃ¡ a quantidade de apostas que serÃ£o feitas? ");
 	scanf("%d", &qtdApostas);
-	
-	printf("Qual será a quantidade de números que serão apostados: ");
+
+	printf("Qual serÃ¡ a quantidade de nÃºmeros que serÃ£o apostados: ");
 	scanf("%d", &qtdNumeros);
-	
-	printf("\nQual o menor número possível? ");
+
+	printf("\nQual o menor nÃºmero possÃ­vel? ");
 	scanf("%d", &menorNum);
-	
-	printf("Qual o maior número do sorteio? ");
+
+	printf("Qual o maior nÃºmero do sorteio? ");
 	scanf("%d", &maiorNum);
-	
-	sleepcp(2000);	
-	
-	printf("\nSORTEANDO NÚMEROS...");
-	sleepcp(3000);
+
+	//sleepcp(2000);
+
+	printf("\nSORTEANDO NÃšMEROS...");
+	//sleepcp(3000);
 	system("cls");
-	
+
 	srand (time(NULL));
 	printf("\n**NUMEROS SORTEADOS**");
 	int apostas[qtdApostas][qtdNumeros], rNum, aux, i, j, k, diferente = 1;
-	
+
 	for(i = 0; i < qtdApostas; i++){
-		printf("\n%d°\t", i+1);
-		sleepcp(25);
+		printf("\n%dÂ°\t", i+1);
+		//sleepcp(25);
 		for(j = 0; j < qtdNumeros; j++){
-			sleepcp(50);
+			//sleepcp(50);
 			rNum = rand() % maiorNum + menorNum;
-			
+
 			printf("%d	", rNum);
-				
+
 			apostas[i][j] = rNum;
-						
-			//VALIDA SE O NÚMERO É REPETIDO. CASO FOR, SORTEIA UM NOVO.			
+
+			//VALIDA SE O NÃšMERO Ã‰ REPETIDO. CASO FOR, SORTEIA UM NOVO.
 			for(k = 0; k < j; k++){
 				do{
 					if(rNum == apostas[i][k]){
 						diferente = 0;
 						rNum = rand() % maiorNum + menorNum;
-						apostas[i][j] = rNum;					
+						apostas[i][j] = rNum;
 					}else{
 						diferente = 1;
 					}
@@ -65,8 +65,8 @@ int main(){
 			}
 		}
 	}
-			
-	//GUARDANDO OS NÚMEROS EM OUTRA VARIÁVEL, CASO NECESSÁRIO (BACKUP)
+
+	//GUARDANDO OS NÃšMEROS EM OUTRA VARIÃVEL, CASO NECESSÃRIO (BACKUP)
 	int apostas_bkp[i][j];
 	//printf("\n\n**REALIZANDO BACKUP...**\n");
 	for(i = 0; i < qtdApostas; i++){
@@ -74,14 +74,14 @@ int main(){
 			apostas_bkp[i][j] = apostas[i][j];
 		}
 	}
-	
+
 	//ORGANIZA NUMEROS
-	sleepcp(2000);	
-	printf("\n\n**APLICANDO ORDEM CRESCENTE NOS NÚMEROS SORTEADOS...**\n");
-	sleepcp(3000);
+	//sleepcp(2000);
+	printf("\n\n**APLICANDO ORDEM CRESCENTE NOS NÃšMEROS SORTEADOS...**\n");
+	//sleepcp(3000);
 	system("cls");
 	int cont;
-	
+
 	for(i = 0; i < qtdApostas; i++){
 		for(cont = 0; cont < qtdNumeros; cont++){
 			for(j = cont; j < qtdNumeros; j++){
@@ -90,38 +90,38 @@ int main(){
 					apostas[i][cont] = apostas[i][j];
 					apostas[i][j] = aux;
 				}
-			}			
+			}
 		}
 	}
-	
+
 	printf("\n**RESULTADO**\n");
-	sleepcp(25);
-	printf("%d apostas | %d números por aposta\n",qtdApostas, qtdNumeros);
-	sleepcp(25);
-	printf("números entre %d e %d\n", menorNum, maiorNum);
+	//sleepcp(25);
+	printf("%d apostas | %d NÃšMEROs por aposta\n",qtdApostas, qtdNumeros);
+	//sleepcp(25);
+	printf("NÃšMEROs entre %d e %d\n", menorNum, maiorNum);
 	for(i = 0; i < qtdApostas; i++){
-		printf("\n%d°\t", i+1);
+		printf("\n%dÂ°\t", i+1);
 		sleepcp(25);
 		for(j = 0; j < qtdNumeros; j++){
 			sleepcp(50);
 			printf("%d	",apostas[i][j]);
 		}
 	}
-	
+
 	int opcao;
 	printf("\n\n------------------------------------\n");
-	printf("\nO que você deseja fazer com as apostas?");
+	printf("\nO que vocÃª deseja fazer com as apostas?");
 	printf("\n1 - Sortear novamente.");
-	printf("\n2 - Gravar o resultado em um arquivo de texto já existente.");
+	printf("\n2 - Gravar o resultado em um arquivo de texto jÃ¡ existente.");
 	printf("\n3 - Gravar o resultado em um novo arquivo de texto.");
-	printf("\n4 - Sair\nEscolha a opção desejada:");
+	printf("\n4 - Sair\nEscolha a opÃ§Ã£o desejada:");
 	scanf("%d", &opcao);
-	
+
 	switch(opcao){
 		case 1:
-			sleepcp(1000);
-			printf("\nO PROGRAMA SERÁ INICIADO NOVAMENTE.");
-			sleepcp(2000);
+			//sleepcp(1000);
+			printf("\nO PROGRAMA SERÃ INICIADO NOVAMENTE.");
+			//sleepcp(2000);
 			system("cls");
 			return main();
 		case 2:
@@ -130,11 +130,11 @@ int main(){
 			break;
 		case 4:
 			system("cls");
-			sleepcp(2000);
-			printf("O PROGRAMA SERÁ FINALIZADO.");
-			sleepcp(3000);
+			//sleepcp(2000);
+			printf("O PROGRAMA SERÃ FINALIZADO.");
+			//sleepcp(3000);
 			return 0;
 	}
-	
+
 	return 0;
 }
