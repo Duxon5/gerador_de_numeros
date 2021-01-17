@@ -11,8 +11,8 @@
 
 using namespace std;
 
-bool delay = true;
-bool cls = true;
+bool delay = false;
+bool cls = false;
 
 int qtd_arquivos = 0;
 bool arquivo_recarregado = false;
@@ -21,14 +21,11 @@ int **numSorteioOrganizado;
 int qtd_apos;
 int qtd_num;
 
-void atraso(int milliseconds);
-
 //Funcoes para sortear
 tuple<int,int,int,int> recebeParametro();
 int ** sorteiaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum);
 int ** organizaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum, int **numSorteio);
 int opcaoEscolhida();
-int isInteiroPositivo();
 
 //Funcoes para gravar
 void listaQtdArquivoPasta(const char *caminho);
@@ -36,11 +33,18 @@ std::string listaArquivoPasta(const char *caminho, int arquivo_escolhido);
 char listaConteudoArquivo(const char *caminho, std::string& nome_arquivo);
 std::string criarArquivo(const char *caminho, string caminho_nome_arquivo);
 char gravarArquivo(string caminho_nome_arquivo);
+
+//Funcoes de validacao ou auxilio
+int isInteiroPositivo();
 bool hasArquivo(std::string& nome_arquivo);
 int arquivoEscolhido();
 bool isExtensaoValida(string caminho_nome_arquivo);
 string verificaExtensao(string caminho_nome_arquivo);
 
+//Funcoes para decoracao
+void atraso(int milliseconds);
+
+//////////////////////////
 int main(){
   int qtdApostas, qtdNumeros, menorNum, maiorNum;
   tie(qtdApostas, qtdNumeros, menorNum, maiorNum) = recebeParametro();
@@ -54,12 +58,7 @@ int main(){
 	return 0;
 }
 
-void atraso(int milliseconds){
-    clock_t time_end;
-    time_end = clock() + milliseconds * CLOCKS_PER_SEC/1000;
-    while (clock() < time_end){}
-}
-
+//Funcoes para sortear
 tuple<int,int,int,int> recebeParametro(){
   int qtdApostas, qtdNumeros, menorNum, maiorNum;
 	cout << "**GERADOR DE NUMEROS QUE COM CERTEZA SERAO SORTEADOS NA MEGA DA VIRADA**\n";
@@ -263,18 +262,7 @@ int opcaoEscolhida(){
 	}
 }
 
-int isInteiroPositivo(){
-	int valor = 0;
-	cin >> valor;
-	while(cin.fail() || valor <= 0) {
-			cout << "Apenas numero inteiro positivo -> ";
-			cin.clear();
-			cin.ignore(256,'\n');
-			cin >> valor;
-	}
-	return valor;
-}
-
+//Funcoes para gravar
 void listaQtdArquivoPasta(const char *caminho){
 	qtd_arquivos = 0;
 	struct dirent *entrada;
@@ -477,6 +465,19 @@ char gravarArquivo(string caminho_nome_arquivo){
 	}
 }
 
+//Funcoes de validacao ou auxilio
+int isInteiroPositivo(){
+	int valor = 0;
+	cin >> valor;
+	while(cin.fail() || valor <= 0) {
+			cout << "Apenas numero inteiro positivo -> ";
+			cin.clear();
+			cin.ignore(256,'\n');
+			cin >> valor;
+	}
+	return valor;
+}
+
 bool hasArquivo(std::string& nome_arquivo){
     std::ifstream arquivo(nome_arquivo);
     return arquivo.good();
@@ -516,4 +517,11 @@ string verificaExtensao(string caminho_nome_arquivo){
 	string extensao = auxiliar.substr(procura + 1);
 
 	return extensao;
+}
+
+//Funcoes para decoracao
+void atraso(int milliseconds){
+    clock_t time_end;
+    time_end = clock() + milliseconds * CLOCKS_PER_SEC/1000;
+    while (clock() < time_end){}
 }
