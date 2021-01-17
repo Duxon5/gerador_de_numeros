@@ -2,7 +2,7 @@
 
 ### Imagens do programa
 
-![Alt text]("./img/opcao_salvar.png?raw=true "Title")
+![Alt text](./img/opcao_salvar.png?raw=true "Title")
 Paragrafo
 
 * Lista
