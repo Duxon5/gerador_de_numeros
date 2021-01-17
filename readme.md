@@ -19,8 +19,8 @@
      <td>Quando gravado em .txt, será separado por espaços.</td>
   </tr>
   <tr>
-    <td><img src="./img/print_csv.png" width=300 height=480></td>
-    <td><img src="./img/print_txt.png" width=571 height=252></td>
+    <td><img src="./img/print_csv.png" width=200 height=400></td>
+    <td><img src="./img/print_txt.png" width=300 height=300></td>
   </tr>
  </table>
 
