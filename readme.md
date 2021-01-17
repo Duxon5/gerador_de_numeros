@@ -24,8 +24,8 @@ O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que
      <td>Quando gravado em .txt, será separado por espaços.</td>
   </tr>
   <tr>
-    <td><img src="./img/print_csv.png" width=400 height=200></td>
-    <td><img src="./img/print_txt.png" width=300 height=300></td>
+    <td><img src="./img/print_csv.png" width=400 height=200 vertical-align="middle" text-align="center"></td>
+    <td><img src="./img/print_txt.png" width=250 height=250></td>
   </tr>
  </table>
 
