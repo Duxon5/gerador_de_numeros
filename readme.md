@@ -38,7 +38,7 @@ O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que
 
 ## Como utilizar [Windows]
 
-* Será necessário instalar o [MINGW](https://sourceforge.net/projects/mingw/)
+* Será necessário instalar o <a href="https://sourceforge.net/projects/mingw/" target="_blank">MINGW</a>
 * Ao instalar, será necessário marcar as opções de 'msys' e 'bin'
 * Após a instalação, colocar o caminho <b>'DISCO:\MinGW\msys'</b> e <b>'DISCO:\MinGW\bin'</b> no <b>PATH</b> das variáveis do ambiente
 * Abrir o cmd e acessar a pasta que o arquivo <b>'random_numer.cpp'</b> se encontra <i>(exemplo: cd C:\Users\Carlos\gerador_de_numeros')</i>
