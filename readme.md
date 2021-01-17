@@ -12,8 +12,8 @@ O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que
      <td>Além de serem gravados em um arquivo de sua escolha (txt ou csv), será apresentado na tela como foi gravado.</td>
   </tr>
   <tr>
-    <td><img src="./img/opcao_salvar.png" width=300 height=480></td>
-    <td><img src="./img/resultados_gravados.png" width=571 height=252></td>
+    <td><img src="./img/opcao_salvar.png"></td>
+    <td><img src="./img/resultados_gravados.png"></td>
   </tr>
  </table>
  
@@ -24,9 +24,8 @@ O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que
      <td>Quando gravado em .txt, será separado por espaços.</td>
   </tr>
   <tr>
-    <td><img src="./img/print_csv.png" width=450
-	height=200 vertical-align="middle"></td>
-    <td><img src="./img/print_txt.png" width=250 height=250></td>
+    <td><img src="./img/print_csv.png"></td>
+    <td><img src="./img/print_txt.png"></td>
   </tr>
  </table>
 
