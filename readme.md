@@ -1,4 +1,4 @@
-# Gerador de apostas númericas
+# Gerador de apostas
 
 ## Introdução
 O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que as pessoas que costumam apostar em sorteios, como por exemplo o <b>"Mega da Virada"</b>, não percam muito tempo pensando em números aleatórios para poderem apostar. 
