@@ -1,5 +1,9 @@
 # Gerador de apostas númericas
 
+## Introdução
+O projeto gerador_de_numeros foi desenvolvido com o intuito de que as pessoas que costumam apostar em sorteios, como por exemplo o "Mega da Virada", não percam muito tempo pensando em números aleatórios para poder apostar. 
+Esta solução fica ainda mais eficiente em bolões, pois nessa circunstância é necessário realizar diversos jogos (sorteios). Dessa forma, basta apenas digitar quantos jogos serão feitos e <b>Voilà!</b>, todos os resultados serão gravados em um arquivo. Basta apenas apostar!
+
 ### Imagens do programa
 <table>
   <tr>
