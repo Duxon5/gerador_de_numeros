@@ -1,7 +1,8 @@
-# Testando o README.MD
-## Acrescentando mais um linha
-### Outra...
+# Gerador de apostas númericas
 
+### Imagens do programa
+
+![Alt text]("./img/opcao_salvar.png?raw=true "Title")
 Paragrafo
 
 * Lista
