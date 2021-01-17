@@ -9,7 +9,7 @@
   </tr>
   <tr>
     <td><img src="./img/opcao_salvar.png" width=270 height=480></td>
-    <td><img src="/img/resultados_gravados" width=270 height=480></td>
+    <td><img src="./img/resultados_gravados" width=270 height=480></td>
   </tr>
  </table>
 
