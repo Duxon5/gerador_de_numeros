@@ -46,4 +46,9 @@ O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que
 
 ## Considerações finais
 
-Peço que se possível, caso tiver interesse no programa e realizar o teste, deixe uma avaliação e caso encontrar qualquer tipo de problema me informe para poder corrigí-lo.
+Peço que se possível, caso tiver interesse no programa e realizar o download, deixe uma avaliação e caso encontrar qualquer tipo de problema, me informe para poder corrigí-lo.
+
+Agradeço a todos pela atenção!
+
+Atenciosamente,
+Sidnei G. de Azevedo Júnior.
