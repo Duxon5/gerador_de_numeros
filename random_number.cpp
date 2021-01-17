@@ -3,7 +3,6 @@
 #include <dirent.h>
 #include <fstream>
 #include <iostream>
-#include <locale.h>
 #include <sstream>
 #include <stdlib.h>
 #include <string>
@@ -12,8 +11,8 @@
 
 using namespace std;
 
-bool delay = false;
-bool cls = false;
+bool delay = true;
+bool cls = true;
 
 int qtd_arquivos = 0;
 bool arquivo_recarregado = false;
@@ -22,7 +21,7 @@ int **numSorteioOrganizado;
 int qtd_apos;
 int qtd_num;
 
-void sleepcp(int milliseconds);
+void atraso(int milliseconds);
 
 //Funcoes para sortear
 tuple<int,int,int,int> recebeParametro();
@@ -43,7 +42,6 @@ bool isExtensaoValida(string caminho_nome_arquivo);
 string verificaExtensao(string caminho_nome_arquivo);
 
 int main(){
-	setlocale (LC_ALL,"");
   int qtdApostas, qtdNumeros, menorNum, maiorNum;
   tie(qtdApostas, qtdNumeros, menorNum, maiorNum) = recebeParametro();
 
@@ -56,7 +54,7 @@ int main(){
 	return 0;
 }
 
-void sleepcp(int milliseconds){
+void atraso(int milliseconds){
     clock_t time_end;
     time_end = clock() + milliseconds * CLOCKS_PER_SEC/1000;
     while (clock() < time_end){}
@@ -104,9 +102,9 @@ tuple<int,int,int,int> recebeParametro(){
 }
 
 int ** sorteiaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum){
-  if(delay==true)  sleepcp(2000);
+  if(delay==true)  atraso(2000);
   cout << "\nSORTEANDO NUMEROS...";
-	if(delay==true)  sleepcp(3000);
+	if(delay==true)  atraso(3000);
 	if(cls==true)  system("cls");
 
 	srand (time(NULL));
@@ -115,10 +113,10 @@ int ** sorteiaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum)
   int rNum, aux, i, j, k;
 
 	for(i = 0; i < qtdApostas; i++){
-		if(delay==true) sleepcp(25);
+		if(delay==true) atraso(25);
 		apostas[i] = new int[qtdNumeros];
 		for(j = 0; j < qtdNumeros; j++){
-			if(delay==true)  sleepcp(50);
+			if(delay==true)  atraso(50);
 			rNum = rand() % maiorNum + menorNum;
 			apostas[i][j] = rNum;
 			//VALIDA SE O NUMERO É REPETIDO. CASO FOR, SORTEIA UM NOVO.
@@ -142,7 +140,7 @@ int ** sorteiaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum)
 	int l, m;
 	for(l = 0; l < qtdApostas; l++){
 		cout << "\n" << l+1 << "\t";
-		for(m = 0; m < qtdApostas; m++){
+		for(m = 0; m < qtdNumeros; m++){
 			cout << apostas[l][m] << "	";
 		}
 	}
@@ -151,9 +149,9 @@ int ** sorteiaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum)
 }
 
 int ** organizaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum, int **numSorteio){
-	if(delay==true)  sleepcp(2000);
+	if(delay==true)  atraso(2000);
 	cout << "\n\n**APLICANDO ORDEM CRESCENTE NOS NUMEROS SORTEADOS...**\n";
-	if(delay==true)  sleepcp(3000);
+	if(delay==true)  atraso(3000);
 	if(cls==true)  system("cls");
 
   // int** apostas = new int*[qtdApostas];
@@ -173,15 +171,15 @@ int ** organizaNumero(int qtdApostas, int qtdNumeros, int menorNum, int maiorNum
 	}
 
 	cout << "\n**RESULTADO**\n";
-	if(delay==true)  sleepcp(25);
+	if(delay==true)  atraso(25);
   cout << qtdApostas << " apostas | " << qtdNumeros << " NUMEROS por aposta\n";
-	if(delay==true)  sleepcp(25);
+	if(delay==true)  atraso(25);
   cout << "NUMEROS entre " << menorNum << " e " << maiorNum << endl;
 	for(i = 0; i < qtdApostas; i++){
     cout << "\n" << i+1 << "\t";
-		if(delay==true) sleepcp(25);
+		if(delay==true) atraso(25);
 		for(j = 0; j < qtdNumeros; j++){
-			if(delay==true)  sleepcp(50);
+			if(delay==true)  atraso(50);
       cout << numSorteio[i][j] << "	";
 		}
 	}
@@ -204,9 +202,9 @@ int opcaoEscolhida(){
 
 	switch(opcao){
 		case 1:
-			if(delay==true)  sleepcp(1000);
+			if(delay==true)  atraso(1000);
 			cout << "\nO PROGRAMA SERA INICIADO NOVAMENTE.";
-			if(delay==true)  sleepcp(2000);
+			if(delay==true)  atraso(2000);
 			if(cls==true)  system("cls");
 			return main();
 		case 2:
@@ -231,7 +229,7 @@ int opcaoEscolhida(){
 
 			listaConteudoArquivo(caminho, nome_arquivo_escolhido);
 
-			if(delay==true)  sleepcp(2000);
+			if(delay==true)  atraso(2000);
 			cout << "\nPRESSIONE QUALQUER TECLA PARA ENCERRAR O PROGRAMA.\n";
 			getch();
 			if(cls==true)  system("cls");
@@ -243,13 +241,13 @@ int opcaoEscolhida(){
 			const char *caminho = "./files";
 
 			string arquivo_criado = criarArquivo(caminho, "");
-			if(delay == true)	sleepcp(2000);
+			if(delay == true)	atraso(2000);
 			if(cls == true) system("cls");
 			listaConteudoArquivo("", arquivo_criado);
 			gravarArquivo(arquivo_criado);
 			listaConteudoArquivo("", arquivo_criado);
 
-			if(delay==true)  sleepcp(2000);
+			if(delay==true)  atraso(2000);
 			cout << "\nPRESSIONE QUALQUER TECLA PARA ENCERRAR O PROGRAMA.\n";
 			getch();
 			if(cls==true)  system("cls");
@@ -258,9 +256,9 @@ int opcaoEscolhida(){
 		}
 		case 4:
 			if(cls==true)  system("cls");
-			if(delay==true)  sleepcp(2000);
+			if(delay==true)  atraso(2000);
 			cout << "\nO PROGRAMA SERA FINALIZADO.\n";
-			if(delay==true)  sleepcp(3000);
+			if(delay==true)  atraso(3000);
 			return 0;
 	}
 }
@@ -283,8 +281,7 @@ void listaQtdArquivoPasta(const char *caminho){
 	DIR *dir = opendir(caminho);
 
 	if (dir == NULL){
-		cout << "Diretorio nao encontrado.\n";
-		exit(EXIT_FAILURE);
+		mkdir(caminho);
 	}
 	//verificando quantos arquivos tem na pasta
 	while ((entrada = readdir(dir)) != NULL) {
@@ -362,9 +359,9 @@ std::string listaArquivoPasta(const char *caminho, int arquivo_escolhido) {
 				cout << "O programa sera encerrado.\n";
 				exit(EXIT_FAILURE);
 			}else{
-				if(delay == true)	sleepcp(1000);
+				if(delay == true)	atraso(1000);
 				cout << "Opcão escolhida inexistente.\n-------------------------\n";
-				if(delay == true)	sleepcp(1000);
+				if(delay == true)	atraso(1000);
 				if(cls == true) system("cls");
 			}
 		}
@@ -373,7 +370,7 @@ std::string listaArquivoPasta(const char *caminho, int arquivo_escolhido) {
 
 char listaConteudoArquivo(const char *caminho, std::string& nome_arquivo){
 	if(delay==true){
-		sleepcp(1500);
+		atraso(1500);
 		if(cls == true) system("cls");
 	}
 
@@ -386,10 +383,10 @@ char listaConteudoArquivo(const char *caminho, std::string& nome_arquivo){
 
 	if(arquivo_recarregado == false){
 		cout << "Tentando carregar o arquivo selecionado...\n\n";
-		if(delay==true)	sleepcp(1500);
+		if(delay==true)	atraso(1500);
 	}else{
 		cout << "CARREGANDO O ARQUIVO ATUALIZADO...\n";
-		if(delay==true)	sleepcp(2000);
+		if(delay==true)	atraso(2000);
 	}
 
 	std::ifstream mostrar_arquivo (caminho_nome_arquivo.c_str());
@@ -407,9 +404,9 @@ char listaConteudoArquivo(const char *caminho, std::string& nome_arquivo){
 				cout << "Pressione qualquer tecla para gravar os resultados...\n";
 				getch();
 				cout << "\nGRAVANDO RESULTADOS...";
-				if(delay==true)	sleepcp(1500);
+				if(delay==true)	atraso(1500);
 				cout << "\n\nRESULTADOS GRAVADOS...\n";
-				if(delay==true)	sleepcp(1500);
+				if(delay==true)	atraso(1500);
 				if(cls == true) system("cls");
 				arquivo_recarregado = true;
 				mostrar_arquivo.close();
@@ -425,16 +422,16 @@ char listaConteudoArquivo(const char *caminho, std::string& nome_arquivo){
 			cout << "\n1 - Escolher um novo arquivo.\n2 - Criar um novo arquivo\n\nDigite uma opcão -> ";
 			cin >> escolha;
 			if(escolha==1){
-				if(delay==true)	sleepcp(1500);
+				if(delay==true)	atraso(1500);
 				if(cls == true) system("cls");
 				return '1';
 			}else if(escolha==2){
-				if(delay==true)	sleepcp(1500);
+				if(delay==true)	atraso(1500);
 				return '2';
 			}else{
-		    if(delay == true)	sleepcp(1000);
+		    if(delay == true)	atraso(1000);
 		    cout << "Opcão escolhida inexistente.\n-------------------------\n";
-		    if(delay == true)	sleepcp(1000);
+		    if(delay == true)	atraso(1000);
 		    if(cls == true) system("cls");
 		  }
 		}
@@ -442,9 +439,11 @@ char listaConteudoArquivo(const char *caminho, std::string& nome_arquivo){
 }
 
 std::string criarArquivo(const char *caminho, string caminho_nome_arquivo){
+	//a funcao abaixo cria a pasta, caso nao exista.
+	listaQtdArquivoPasta(caminho);
 	bool isExtensaoOk = true;
 	do{
-		if(isExtensaoOk == false)	cout << "\nExtensao aceita apenas .txt ou .csv (minusculo)";
+		if(isExtensaoOk == false)	cout << "\nExtensao aceita apenas .txt ou .csv (minusculo)\n";
 		cout << "Digite o nome do arquivo a ser criado: " << endl;
 		cin >> caminho_nome_arquivo;
 
