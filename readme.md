@@ -2,7 +2,8 @@
 
 ## Introdução
 O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que as pessoas que costumam apostar em sorteios, como por exemplo o <b>"Mega da Virada"</b>, não percam muito tempo pensando em números aleatórios para poderem apostar. 
-<br/>Esta solução fica ainda mais eficiente em <i>"bolões"</i>, pois nessa circunstância é necessário realizar diversos jogos (sorteios). Dessa forma, basta apenas digitar quantos jogos serão feitos e <b>Voilà!</b>, todos os resultados serão gravados em um arquivo. Basta apenas apostar!
+<br/>Esta solução fica ainda mais eficiente em <i>"bolões"</i>, pois nessa circunstância é necessário realizar diversos jogos (sorteios).
+<br/>Dessa forma, basta apenas digitar quantos jogos serão feitos e <i><b>Voilà!</b></i>, todos os resultados serão gravados em um arquivo. Basta apenas apostar!
 
 ### Imagens do programa
 <table>
@@ -23,7 +24,7 @@ O projeto <i><b>gerador_de_numeros</b></i> foi desenvolvido com o intuito de que
      <td>Quando gravado em .txt, será separado por espaços.</td>
   </tr>
   <tr>
-    <td><img src="./img/print_csv.png" width=200 height=400></td>
+    <td><img src="./img/print_csv.png" width=400 height=200></td>
     <td><img src="./img/print_txt.png" width=300 height=300></td>
   </tr>
  </table>
